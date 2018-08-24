@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcos.churrascmetro.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvMen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:text="Infrome a quantidade de homens:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <SeekBar
+        android:id="@+id/skMen"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvMen"
+        android:layout_alignStart="@+id/tvMen"
+        android:layout_below="@+id/tvMen"
+        android:layout_marginTop="28dp"
+        android:max="30"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tvSkMen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/skMen"
+        android:layout_marginStart="36dp"
+        android:layout_toEndOf="@+id/skMen"
+        android:text="1"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/tvWomen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/skMen"
+        android:layout_below="@+id/skMen"
+        android:layout_marginTop="26dp"
+        android:text="Informe a quantidade de mulheres:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <SeekBar
+        android:id="@+id/skWomen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvWomen"
+        android:layout_below="@+id/tvWomen"
+        android:layout_marginTop="27dp"
+        android:layout_toStartOf="@+id/tvSkMen"
+        android:max="30"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tvSkWomen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/skWomen"
+        android:layout_alignStart="@+id/tvSkMen"
+        android:text="1"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/tvKids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/skWomen"
+        android:layout_below="@+id/tvSkWomen"
+        android:layout_marginTop="30dp"
+        android:text="Informe a quantidade de crianças:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <SeekBar
+        android:id="@+id/skKids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/skWomen"
+        android:layout_alignStart="@+id/tvKids"
+        android:layout_below="@+id/tvKids"
+        android:layout_marginTop="29dp"
+        android:max="30"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tvSkKids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/skKids"
+        android:layout_alignStart="@+id/tvSkWomen"
+        android:text="1"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/tvLing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/skKids"
+        android:layout_below="@+id/skKids"
+        android:layout_marginTop="38dp"
+        android:text="Linguiça:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/tvCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvLing"
+        android:layout_below="@+id/tvLing"
+        android:layout_marginTop="26dp"
+        android:text="Carne:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/tvOutLing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvCarne"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/tvLing"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/tvOutCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvCarne"
+        android:layout_toEndOf="@+id/tvLing"
+        android:text=" "
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+
+</android.widget.RelativeLayout>
